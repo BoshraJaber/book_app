@@ -1,2 +1,28 @@
 <!-- In your `pages/searches/new.ejs` file, create a search field. 
 Add the ability for a user to indicate if they are searching by title or author, as demonstrated in class. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/show" method="get"> 
+<input type="text" name="searchquery" placeholder="enter title or author name">
+
+<input id="author-radio" type="radio" name="searchby" value="author">
+<label for="author-radio"> Search by the author</label>
+
+<input id="title-radio" type="radio" name="searchby" value="title">
+<label for="title-radio"> Search by the title</label>
+
+<input type="submit" name="search" id="search" value="search">
+
+
+
+    </form>
+</body>
+</html>
